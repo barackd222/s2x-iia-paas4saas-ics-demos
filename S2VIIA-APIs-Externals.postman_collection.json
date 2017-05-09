@@ -1,0 +1,143 @@
+{
+	"variables": [],
+	"info": {
+		"name": "S2VIIA-APIs-Externals",
+		"_postman_id": "cd69e1f3-db8f-3658-972a-319ea4aacd2e",
+		"description": "This is a list of APIs that we share with people externally.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SocialChannelManager",
+			"request": {
+				"url": "https://integration-gse00011294.integration.us2.oraclecloud.com/integration/flowapi/rest/S2VIIA_SOCIALCHAN_INT1/v01/social/message",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic cHRmdXNlckBvcmFjbGUuY29tOldha3NpNXVzYw==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"message\":\"Message goes here\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "LinkedIn",
+			"request": {
+				"url": "https://integration-gse00011294.integration.us2.oraclecloud.com/integration/flowapi/rest/S2VIIA_REST2LINKE_INT1/v01/social/linkedin/message",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic cHRmdXNlckBvcmFjbGUuY29tOldha3NpNXVzYw==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"message\":\"Post goes here\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Twitter",
+			"request": {
+				"url": "https://integration-gse00011294.integration.us2.oraclecloud.com/integration/flowapi/rest/S2VIIA_REST2TWITT_INT1/v01/social/tweeter/message",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic cHRmdXNlckBvcmFjbGUuY29tOldha3NpNXVzYw==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"message\":\"Tweet goes here\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SMS",
+			"request": {
+				"url": "http://ptfapi1.myoracledemos.com:3005/sms",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"to\":\"+61xxxxxxxxx\", \n\"msg\":\"Message goes here\"}"
+				},
+				"description": "OracleCloudAU-SMS"
+			},
+			"response": []
+		},
+		{
+			"name": "Voice Call",
+			"request": {
+				"url": "http://ptfapi1.myoracledemos.com:3005/voicecall",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"to\":\"+61xxxxxxxxx\", \n\"msg\":\"Message goes here\"}"
+				},
+				"description": "OracleCloudAU-VoiceCall"
+			},
+			"response": []
+		},
+		{
+			"name": "Conference Call",
+			"request": {
+				"url": "http://ptfapi1.myoracledemos.com:3005/confcall/61xxxxxxxxx/61xxxxxxxxx/Name",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Twilio conference call"
+			},
+			"response": []
+		}
+	]
+}
